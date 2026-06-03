@@ -1,0 +1,106 @@
+.header {
+  height: 44px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 0 14px;
+  background: var(--a-panel);
+  border-bottom: 1px solid var(--a-border);
+}
+
+.brand {
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  font-size: 14px;
+}
+
+.metrics {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-left: auto;
+  font-family: var(--a-font-mono);
+  font-size: 12px;
+}
+
+.metric {
+  display: flex;
+  gap: 6px;
+  align-items: baseline;
+}
+
+.dim {
+  color: var(--a-fg-dim);
+}
+
+.add {
+  color: var(--a-add);
+  font-weight: 500;
+}
+
+.rem {
+  color: var(--a-rem);
+  font-weight: 500;
+}
+
+.apiAlert {
+  color: var(--a-public-warn);
+  font-weight: 600;
+  font-family: var(--a-font-ui);
+}
+
+.toggle {
+  font-family: var(--a-font-ui);
+  font-size: 12px;
+  color: var(--a-fg-dim);
+  background: transparent;
+  border: 1px solid var(--a-border-strong);
+  border-radius: var(--a-radius);
+  padding: 4px 10px;
+  cursor: pointer;
+}
+
+.toggle:hover {
+  color: var(--a-fg);
+  border-color: var(--a-fg-faint);
+}
+
+.toggleOn {
+  color: var(--a-fg);
+  border-color: var(--a-fg-faint);
+}
+
+.commitBanner {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 0;
+}
+
+.commitLabel {
+  color: var(--a-fg-faint);
+  text-transform: uppercase;
+  font-size: 10px;
+  letter-spacing: 0.06em;
+}
+
+.commitSubject {
+  font-family: var(--a-font-mono);
+  font-size: 12px;
+  color: var(--a-fg);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 420px;
+}
+
+.back {
+  font-family: var(--a-font-ui);
+  font-size: 12px;
+  color: var(--a-accent-2);
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}

@@ -1,0 +1,118 @@
+.popover {
+  position: fixed;
+  z-index: 100;
+  width: 280px;
+  background: var(--a-panel-2);
+  border: 1px solid var(--a-border);
+  border-radius: var(--a-radius);
+  padding: 8px;
+  box-shadow: var(--a-shadow);
+}
+
+.heading {
+  color: var(--a-fg-faint);
+  text-transform: uppercase;
+  font-size: 10px;
+  letter-spacing: 0.06em;
+  padding: 2px 6px 8px;
+}
+
+.symbol {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  text-align: left;
+  background: transparent;
+  border: none;
+  border-radius: 4px;
+  padding: 5px 6px;
+  cursor: pointer;
+  font-family: var(--a-font-mono);
+  font-size: 12px;
+  color: var(--a-fg);
+}
+
+.symbol:hover {
+  background: var(--a-hover);
+}
+
+.tag {
+  flex-shrink: 0;
+  width: 22px;
+  text-align: center;
+  border-radius: 3px;
+  font-size: 10px;
+  font-weight: 600;
+  padding: 1px 0;
+  background: var(--a-border-strong);
+  color: var(--a-fg-dim);
+}
+
+/* Per-kind tag colours, matching the prototype's SymKind palette. */
+.fn {
+  background: oklch(0.95 0.04 260);
+  color: oklch(0.4 0.13 260);
+}
+
+.in {
+  background: oklch(0.96 0.04 320);
+  color: oklch(0.42 0.13 320);
+}
+
+.ty {
+  background: oklch(0.96 0.04 200);
+  color: oklch(0.4 0.12 200);
+}
+
+.cl {
+  background: oklch(0.96 0.04 80);
+  color: oklch(0.42 0.13 80);
+}
+
+.name {
+  flex: 1;
+  min-width: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.public {
+  flex-shrink: 0;
+  font-size: 9px;
+  font-family: var(--a-font-ui);
+  font-weight: 600;
+  color: var(--a-public-warn);
+  border: 1px solid var(--a-public-warn);
+  border-radius: 3px;
+  padding: 0 3px;
+}
+
+.sig {
+  flex-shrink: 0;
+  font-size: 9px;
+  font-family: var(--a-font-ui);
+  color: var(--a-warn);
+  border: 1px solid var(--a-warn);
+  border-radius: 3px;
+  padding: 0 3px;
+}
+
+.change {
+  flex-shrink: 0;
+  font-family: var(--a-font-ui);
+  font-size: 10px;
+}
+
+.added {
+  color: var(--a-add);
+}
+
+.removed {
+  color: var(--a-rem);
+}
+
+.modified {
+  color: var(--a-warn);
+}

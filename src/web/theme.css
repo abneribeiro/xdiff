@@ -1,0 +1,63 @@
+/*
+ * Editorial / Vercel-clean design tokens.
+ *
+ * Values taken from the `aStyles.root` block of the design prototype
+ * (dif/variant-a.jsx). Light surface, near-black ink, soft oklch mint/salmon
+ * for add/remove. Component CSS references the aliases below, so the whole UI
+ * follows from this single source of truth.
+ */
+:root {
+  /* surfaces */
+  --a-bg: #ffffff;
+  --a-panel: #fafafa;
+  --a-panel-2: #ffffff; /* popovers / inputs sit on pure white above the panel */
+  --a-border: #ececec;
+  --a-border-strong: #dcdcdc;
+  --a-hover: #f4f4f5;
+  --a-active: #f0f0f1;
+
+  /* ink */
+  --a-fg: oklch(0.22 0.005 270);
+  --a-fg-dim: oklch(0.55 0.005 270);
+  --a-fg-faint: oklch(0.7 0.005 270);
+
+  /* accents */
+  --a-accent: oklch(0.22 0.005 270); /* active underline / rail — Vercel near-black */
+  --a-accent-2: #0070f3; /* links, sha, focus ring — Vercel blue */
+
+  /* diff semantics (soft mint / salmon) */
+  --a-add: oklch(0.42 0.13 155);
+  --a-add-bg: oklch(0.965 0.04 155);
+  --a-rem: oklch(0.48 0.15 25);
+  --a-rem-bg: oklch(0.965 0.025 25);
+  --a-warn: oklch(0.55 0.16 45);
+  --a-public-warn: oklch(0.55 0.18 25);
+
+  /* elevation */
+  --a-shadow: 0 10px 32px rgba(0, 0, 0, 0.06), 0 2px 6px rgba(0, 0, 0, 0.04);
+
+  --a-radius: 6px;
+  --a-font-ui: "Inter", -apple-system, "Segoe UI", system-ui, sans-serif;
+  --a-font-mono: "JetBrains Mono", ui-monospace, "SF Mono", Menlo, monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background: var(--a-bg);
+  color: var(--a-fg);
+  font-family: var(--a-font-ui);
+  font-size: 13px;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}

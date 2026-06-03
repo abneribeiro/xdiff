@@ -1,0 +1,94 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 14px 6px;
+}
+
+.title {
+  color: var(--a-fg-faint);
+  text-transform: uppercase;
+  font-size: 10px;
+  letter-spacing: 0.06em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.clear {
+  background: transparent;
+  border: none;
+  color: var(--a-fg-faint);
+  cursor: pointer;
+  font-size: 11px;
+}
+
+.clear:hover {
+  color: var(--a-fg);
+}
+
+.row {
+  display: block;
+  width: 100%;
+  text-align: left;
+  background: transparent;
+  border: none;
+  border-left: 2px solid transparent;
+  padding: 7px 14px;
+  cursor: pointer;
+}
+
+.row:hover {
+  background: var(--a-hover);
+  border-left-color: var(--a-accent);
+}
+
+.line {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.sha {
+  font-family: var(--a-font-mono);
+  font-size: 11px;
+  color: var(--a-accent-2);
+}
+
+.date {
+  margin-left: auto;
+  font-family: var(--a-font-mono);
+  font-size: 10px;
+  color: var(--a-fg-faint);
+}
+
+.subject {
+  color: var(--a-fg);
+  font-size: 12px;
+  margin-top: 3px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.badge {
+  font-size: 9px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  border-radius: 3px;
+  padding: 1px 4px;
+  color: var(--a-bg);
+}
+
+.added {
+  background: var(--a-add);
+}
+
+.removed {
+  background: var(--a-rem);
+}
+
+.modified {
+  background: var(--a-warn);
+}
