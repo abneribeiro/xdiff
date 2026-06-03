@@ -1,0 +1,71 @@
+{
+  "name": "@abneribeiro/xdiff",
+  "version": "0.1.0",
+  "description": "Zero-config real-time code diff tracker with semantic (tree-sitter) analysis and a Monaco-based browser UI.",
+  "author": "abneribeiro",
+  "type": "module",
+  "bin": {
+    "xdiff": "dist/cli.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abneribeiro/xdiff.git"
+  },
+  "homepage": "https://github.com/abneribeiro/xdiff#readme",
+  "bugs": {
+    "url": "https://github.com/abneribeiro/xdiff/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "npm run build:web && npm run build:server",
+    "build:server": "tsup",
+    "build:web": "vite build",
+    "dev": "tsup --watch",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "prepublishOnly": "npm run build"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "diff",
+    "git",
+    "tree-sitter",
+    "monaco",
+    "watcher",
+    "code-review"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "@fontsource/inter": "^5.1.0",
+    "@fontsource/jetbrains-mono": "^5.1.1",
+    "chokidar": "^4.0.3",
+    "diff": "^7.0.0",
+    "ignore": "^7.0.3",
+    "open": "^10.1.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "tree-sitter-wasms": "^0.1.12",
+    "web-tree-sitter": "^0.25.3",
+    "ws": "^8.18.0"
+  },
+  "devDependencies": {
+    "@types/diff": "^7.0.0",
+    "@types/node": "^22.10.0",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@types/ws": "^8.5.13",
+    "@vitejs/plugin-react": "^4.3.4",
+    "monaco-editor": "^0.52.2",
+    "tsup": "^8.3.5",
+    "typescript": "^5.7.2",
+    "vite": "^6.0.5",
+    "vitest": "^2.1.8"
+  }
+}
