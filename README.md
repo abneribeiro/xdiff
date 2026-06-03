@@ -63,7 +63,7 @@ The **Changed** sidebar tab groups files into a collapsible directory tree
 (GitHub-style, with single-child folders compressed and per-folder
 `+`/`−` rollups). Each row shows line stats, a proportional add/remove bar, the
 top changed symbol, and a **viewed** checkbox so you can tick off files as you
-review them — viewed state is remembered per baseline. Deleted tracked files
+review them viewed state is remembered per baseline. Deleted tracked files
 appear as full deletions, and binary/oversized files are flagged instead of
 silently hidden.
 
